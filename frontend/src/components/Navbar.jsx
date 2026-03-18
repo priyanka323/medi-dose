@@ -16,7 +16,7 @@ export default function Navbar({ activePage, onNavigate }) {
             <PillIcon size={20} />
           </div>
           <div>
-            <div className="logo-name">MediDose</div>
+            <div className="logo-name">MedicDose</div>
             <div className="logo-sub">Clinical Dosing Assistant</div>
           </div>
         </div>
