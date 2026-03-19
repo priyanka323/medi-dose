@@ -229,7 +229,7 @@ export const api = {
       console.error("AI Chat Error:", error);
       // Return a friendly error message
       return { 
-        message: "I'm having trouble connecting to the AI service. Please check if the backend is running at: https://medi-dose.onrender.com/api/medicines" 
+        message: "I'm having trouble connecting to the AI service. Please check if the backend is running at: https://medi-dose.onrender.com" 
       };
     }
   },
