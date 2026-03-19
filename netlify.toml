@@ -3,19 +3,15 @@
   command = "npm run build"
   publish = "build"
 
+[build.environment]
+  REACT_APP_API_URL = "https://medi-dose.onrender.com/api"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-  [build]
-  command = "npm run build"
-  publish = "build"
-
-[build.environment]
-  REACT_APP_API_URL = "https://your-render-api.onrender.com"
-
 
 [[headers]]
   for = "/*"
   [headers.values]
-    Cache-Control = "public, max-age=0, must-revalidate
+    Cache-Control = "public, max-age=0, must-revalidate"
