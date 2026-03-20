@@ -203,7 +203,7 @@ export default function CalculatorPage() {
   const [weight, setWeight] = useState("");
   const [ageYears, setAgeYears] = useState("");
   const [ageMonths, setAgeMonths] = useState("");
-  const [conditions, setConditions] = useState([]);
+//  const [conditions, setConditions] = useState([]);
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -223,7 +223,7 @@ export default function CalculatorPage() {
         medicine_id: selectedMed.id,
         weight_kg: parseFloat(weight),
         age_months: totalMonths() || 1,
-        conditions: [...conditions, ...(patientProfile?.conditions || [])],
+        conditions: patientProfile?.conditions || [], // Use conditions from patient profile
       });
       setResult(data);
     } catch (err) {

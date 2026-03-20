@@ -417,7 +417,7 @@ const AscvdCalculator = () => {
     const lnTotal = Math.log(tc);
     const lnHdl = Math.log(hdlNum);
     const lnSbp = Math.log(sbpNum);
-    const lnAgeSquared = Math.pow(lnAge, 2); // not used directly, but needed for some terms
+  //  const lnAgeSquared = Math.pow(lnAge, 2); // not used directly, but needed for some terms
 
     let risk = 0;
 
@@ -425,14 +425,8 @@ const AscvdCalculator = () => {
     if (gender === 'male') {
       if (race === 'white') {
         // Baseline survivor function
-        const baseline = 0.9144;
-        const coef =
-          (12.344 * lnAge) +
-          (2.469 * lnTotal) +
-          (-1.347 * lnHdl) +
-          (2.259 * lnSbp) +
-          (0.590 * (smoker ? 1 : 0)) +
-          (0.0 * (diabetes ? 1 : 0)); // diabetes coefficient actually 0 for men in this version?
+      //  const baseline = 0.9144;
+        //const coef = (12.344 * lnAge) + (2.469 * lnTotal) + (-1.347 * lnHdl) + (2.259 * lnSbp) + (0.590 * (smoker ? 1 : 0)) +(0.0 * (diabetes ? 1 : 0)); // diabetes coefficient actually 0 for men in this version?
         // The original includes an interaction term for treated vs untreated, but we'll simplify with a term
         // Using the published model: for men, coefficients differ for treated vs untreated.
         // I'll implement the full model.
