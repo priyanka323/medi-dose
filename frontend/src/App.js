@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import CalculatorPage from "./pages/CalculatorPage";
 import InteractionsPage from "./pages/InteractionsPage";
 import ReferencePage from "./pages/ReferencePage";
+import CalculatorsPage from "./pages/CalculatorsPage"; // add this
 import "./App.css";
 
 // Page registry — add new pages here
@@ -11,6 +12,8 @@ const PAGES = {
   calculator: CalculatorPage,
   interactions: InteractionsPage,
   reference: ReferencePage,
+  calculators: CalculatorsPage, // add this
+  
 };
 
 export default function App() {

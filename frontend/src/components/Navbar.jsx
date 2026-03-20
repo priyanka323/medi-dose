@@ -38,12 +38,14 @@
 //     </header>
 //   );
 // }
+
 import { FiHome, FiActivity, FiBook, FiCpu } from 'react-icons/fi';
 
 const NAV_ITEMS = [
   { id: "calculator", label: "Dose Calculator", Icon: FiHome },
   { id: "interactions", label: "Drug Interactions", Icon: FiActivity },
   { id: "reference", label: "Medicine DB", Icon: FiBook },
+  { id: "calculators", label: "Clinical Tools", Icon: FiBook}, // new
 ];
 
 export default function Navbar({ activePage, onNavigate }) {
